@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wutong.functiondemo02">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 配置appkey：从 portal 上应用信息中获取 AppKey，并填写你的 Channel -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="Your AppKey" />
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="Your Channel" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyDemo0_20.My01Annotation.My01AnnotationActivity" />
+        <activity android:name=".MyDemo0_20.My02Fragment.My02FragmentActivity" />
+
+        <service android:name=".MyDemo0_20.My00ColdStartApp.InitializeService">
+            <intent-filter>
+                <action android:name="cn.scu.finch" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".MyDemo0_20.My00SmartTable.My03SmartTableActivity" />
+        <activity android:name=".MyDemo0_20.My00TextView.My04TextViewActivity" />
+        <activity android:name=".MyDemo0_20.My03SoundSize.My03SoundSizeActivity" />
+        <activity
+            android:name=".MyDemo0_20.My04MediaPlayer.My04MediaPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity android:name=".MyDemo0_20.My05WebView.My05WebViewActivity" />
+        <activity android:name=".MyDemo0_20.My06Okhttputils.My06OkhttputilsActivity" />
+        <activity android:name=".MyDemo0_20.My07ThreadPool.My07ThreadPoolActivity" />
+        <activity android:name=".MyDemo0_20.My07Muti_Touch.My07MutiTouchActivity" />
+        <activity android:name=".MyDemo0_20.My08Record.My08RecordActivity" />
+
+        <service
+            android:name=".MyDemo0_20.My09Service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".MyDemo0_20.My08Record.RecordService" />
+
+        <activity android:name=".MyDemo0_20.My09Service.My09ServiceActivity" />
+        <activity android:name=".MyDemo0_20.My10KeyBoard.My10KeyBoardActivity" />
+        <activity android:name=".MyDemo0_20.My11Doodle.My11DoodleActivity" />
+        <activity android:name=".MyDemo0_20.My12CaughtException.My12CaughtExceptionActivity"></activity>
+    </application>
+
+</manifest>

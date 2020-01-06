@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.wutong.functiondemo02.MyDemo0_20.My00SmartTable.My03SmartTableActivity">
+
+<com.bin.david.form.core.SmartTable
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <!--<android.support.v7.widget.GridLayout-->
+
+        <!--android:id="@+id/gl"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--app:columnCount="8"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:rowCount="4">-->
+
+        <!--<TextView-->
+            <!--app:layout_columnWeight="1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:background="#fffff0c4"-->
+            <!--android:gravity="center"-->
+            <!--android:text="序号"-->
+            <!--android:textColor="#ff434343"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+            <!--app:layout_columnWeight="3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:background="#fffff0c4"-->
+            <!--android:gravity="center"-->
+            <!--android:text="课堂名称"-->
+            <!--android:textColor="#ff434343"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:background="#fffff0c4"-->
+            <!--android:gravity="center"-->
+            <!--android:text="班级"-->
+            <!--android:textColor="#ff434343"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:background="#fffff0c4"-->
+            <!--android:gravity="center"-->
+            <!--android:text="老师"-->
+            <!--android:textColor="#ff434343"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:background="#fffff0c4"-->
+            <!--android:gravity="center"-->
+            <!--android:text="上课日期"-->
+            <!--android:textColor="#ff434343"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:background="#fffff0c4"-->
+            <!--android:gravity="center"-->
+            <!--android:text="上课时间"-->
+            <!--android:textColor="#ff434343"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:background="#fffff0c4"-->
+            <!--android:gravity="center"-->
+            <!--android:text="上课星期"-->
+            <!--android:textColor="#ff434343"-->
+            <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+            <!--app:layout_columnWeight="2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="43dp"-->
+            <!--android:background="#fffff0c4"-->
+            <!--android:gravity="center"-->
+            <!--android:text="学习进度"-->
+            <!--android:textColor="#ff434343"-->
+            <!--android:textSize="12sp" />-->
+
+
+
+    <!--</android.support.v7.widget.GridLayout>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wutong.functiondemo02.MyDemo0_20.My04MediaPlayer.My04MediaPlayerActivity">
+
+    <com.wutong.functiondemo02.MyDemo0_20.My04MediaPlayer.MyMediaPlayerView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/surfaceView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:text="开始"
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <Button
+            android:text="暂停"
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <Button
+            android:text="切换"
+            android:id="@+id/btn_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <Button
+            android:text="快进"
+            android:id="@+id/btn_seekto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+            <Button
+            android:text="音频声音"
+            android:id="@+id/btn_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_marginBottom="20dp"
+        android:id="@+id/sb"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
