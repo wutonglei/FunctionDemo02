@@ -45,7 +45,7 @@ public class MyImageView extends View {
 
     int drawWidth;
 
-    private float mode=3;
+    private float mode = 3;
     /**
      * 1  2  3种显示方式
      */
@@ -54,8 +54,10 @@ public class MyImageView extends View {
     public static final int MODE_3 = 1;
 
 
+    private float percent = 1f;
+
     public void setMode(@Mode int mode) {
-        this.mode = mode/3.0f ;
+        this.percent = mode / 3.0f;
         invalidate();
     }
 
@@ -65,17 +67,16 @@ public class MyImageView extends View {
     }
 
 
-
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        int bitCenter=bitmap.getWidth()/2;
-        int halfShowWidth=(int) (bitmap.getWidth() *mode/2);
-        Rect src = new Rect(bitCenter-halfShowWidth, 0, bitCenter+halfShowWidth, bitmap.getHeight());
+        int bitCenter = bitmap.getWidth() / 2;
+        int halfShowWidth = (int) (bitmap.getWidth() * percent / 2);
+        Rect src = new Rect(bitCenter - halfShowWidth, 0, bitCenter + halfShowWidth, bitmap.getHeight());
 
         // 指定图片在屏幕上显示的区域
-        Rect dst = new Rect(0, 0, (int) (getWidth()*mode), getHeight());
+        Rect dst = new Rect(0, 0, (int) (getWidth() * percent), getHeight());
 
         // 绘制图片
         canvas.drawBitmap(bitmap, src, dst, null);
