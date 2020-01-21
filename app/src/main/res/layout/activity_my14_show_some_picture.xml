@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff1a1a"
+    tools:context="com.wutong.functiondemo02.MyDemo0_20.My14ShowSomePicture.My14ShowSomePictureActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.wutong.functiondemo02.MyDemo0_20.My14ShowSomePicture.MyImageView
+            android:id="@+id/miv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:id="@+id/btn_mode1"
+           android:text="设置Mode1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+           <Button
+           android:id="@+id/btn_mode2"
+           android:text="设置Mode2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+           <Button
+           android:id="@+id/btn_mode3"
+           android:text="设置Mode3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+   </LinearLayout>
+
+
+</RelativeLayout>
