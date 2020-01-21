@@ -32,6 +32,8 @@ import com.wutong.functiondemo02.MyDemo0_20.My09Service.MyService;
 import com.wutong.functiondemo02.MyDemo0_20.My10KeyBoard.My10KeyBoardActivity;
 import com.wutong.functiondemo02.MyDemo0_20.My11Doodle.My11DoodleActivity;
 import com.wutong.functiondemo02.MyDemo0_20.My12CaughtException.My12CaughtExceptionActivity;
+import com.wutong.functiondemo02.MyDemo0_20.My13CheckLayout.My13CheckLayoutActivity;
+import com.wutong.functiondemo02.MyDemo0_20.My14ShowSomePicture.My14ShowSomePictureActivity;
 import com.wutong.functiondemo02.utils.EncryptUtils;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
@@ -230,6 +232,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
             case 11:
                 i = new Intent(MainActivity.this, My12CaughtExceptionActivity.class);
+                startActivity(i);
+                break;
+      case 12:
+                i = new Intent(MainActivity.this, My13CheckLayoutActivity.class);
+                startActivity(i);
+                break;
+      case 13:
+                i = new Intent(MainActivity.this, My14ShowSomePictureActivity.class);
                 startActivity(i);
                 break;
 

@@ -70,7 +70,8 @@
         <activity android:name=".MyDemo0_20.My09Service.My09ServiceActivity" />
         <activity android:name=".MyDemo0_20.My10KeyBoard.My10KeyBoardActivity" />
         <activity android:name=".MyDemo0_20.My11Doodle.My11DoodleActivity" />
-        <activity android:name=".MyDemo0_20.My12CaughtException.My12CaughtExceptionActivity"></activity>
+        <activity android:name=".MyDemo0_20.My12CaughtException.My12CaughtExceptionActivity" />
+        <activity android:name=".MyDemo0_20.My14ShowSomePicture.My14ShowSomePictureActivity"></activity>
     </application>
 
 </manifest>
